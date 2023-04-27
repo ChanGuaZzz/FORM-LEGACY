@@ -14,10 +14,98 @@
 }
 
 button{
-    width: 100px;
+    display: flex;
+    border: 1px solid black;
+    width: 50px;
     height: 30px;
+    background-color: rgb(130, 161, 104);
+    gap: .100rem;
+    flex-direction: column;
+    box-shadow:  6px 5px 10px black;
+} 
+
+button > div{
+    margin-top: 4px;
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+}
+button:hover div:first-child{
+    animation: div1 1s 1 forwards;
+}
+button:not(:hover) div:first-child{
+    animation: div1termina 1s 1 forwards;
+    background: transparent;
 }
 
-#precio{
-    font-family: 'Times New Roman', Times, serif;
+button:active div:nth-child(2){
+    opacity: 0;
 }
+button:hover div:last-child{
+    
+    animation: div2 1s 1 forwards;
+}
+button:not(:hover) div:last-child{
+    animation: div2termina 1s 1 forwards;
+    background: transparent;
+}
+@keyframes div1 {
+    0% {
+
+    }
+
+    50% {
+
+    }
+    100%{
+        width: 40%;
+        margin-left: 10px;
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes div1termina {
+    0% {width: 40%;
+        margin-left: 10px;
+        transform: rotate(90deg);
+    }
+
+    50% {
+
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes div2 {
+    0% {
+
+    }
+
+    50% {
+
+    }
+    100%{
+        width: 40%;
+        margin-left: 10px;
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes div2termina {
+    0% {width: 40%;
+        margin-left: 10px;
+        transform: rotate(-90deg);
+    }
+
+    50% {
+
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
