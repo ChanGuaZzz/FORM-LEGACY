@@ -1,4 +1,8 @@
-const elemento = document.getElementById(`foto`);
+
+
+for(i=0;i< document.getElementsByClassName(`foto`).length;i++){
+
+const elemento = document.getElementsByClassName(`foto`)[i];
 const height = elemento.clientHeight;
 const width = elemento.clientWidth;
 
@@ -13,3 +17,4 @@ elemento.addEventListener("mousemove", (evt) => {
 elemento.addEventListener("mouseout", () => {
   elemento.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
 });
+}

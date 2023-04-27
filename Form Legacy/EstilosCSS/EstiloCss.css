@@ -16,3 +16,6 @@ section img:hover {
     opacity: 1;
     filter:contrast(120%);
 }
+.divLogo{
+    border: 3px solid black;
+}

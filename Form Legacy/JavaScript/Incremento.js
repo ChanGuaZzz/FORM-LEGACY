@@ -5,6 +5,7 @@ for (let i = 0; i <  document.querySelectorAll('.boton').length; i++) {
   
 
   boton.addEventListener('click', function() {
+    
     const precio = parseFloat(boton.dataset.precio);
     totalAPagar += precio;
     console.log(`Total a pagar: ${totalAPagar}`);
@@ -14,11 +15,18 @@ for (let i = 0; i <  document.querySelectorAll('.boton').length; i++) {
       boton.children[1].style.transform = "rotate(180deg)";
       console.log("clickeado");
       botonclickeado=false;
+
     }else{
       boton.children[1].style.transform = "rotate(-180deg)";
       console.log("no clickeado");
       botonclickeado=true;
     }
+    
+    
+      
+      
+      
+    
   });
  
 }
