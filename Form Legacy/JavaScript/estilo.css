@@ -1,111 +1,55 @@
-#foto{
-    height: 500px;
-    width: 500px;
+.foto{
+    height: 200px;
+    width: 200px;
     transition: box-shadow .1s, transform;
     margin: auto;
-    background-image: url(FAkmT9jWUAE7qu9.jpg);
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-top: 10%;
 }
-#foto:hover{
+img{
+    height: 200px;
+    width: 200px;
+
+}
+.foto:hover{
     box-shadow: 0px 0px 50px black;
 }
 
-button{
+.boton{
     display: flex;
     border: 1px solid black;
     width: 50px;
     height: 30px;
-    background-color: rgb(130, 161, 104);
+    background-image: url(carro.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
     gap: .100rem;
     flex-direction: column;
-    box-shadow:  6px 5px 10px black;
+    box-shadow:  10px 10px 10px black;
+    border-radius: 20px 20px 20px;
+    transition: all .1s;
 } 
-
-button > div{
-    margin-top: 4px;
-    background-color: black;
-    height: 2px;
-    width: 100%;
-    border-radius: 5px;
-    transition: all .5s;
-}
-button:hover div:first-child{
-    animation: div1 1s 1 forwards;
-}
-button:not(:hover) div:first-child{
-    animation: div1termina 1s 1 forwards;
-    background: transparent;
+.boton:active{
+    width: 40px;
+    height: 30px;
+    margin-bottom: 16px;
 }
 
-button:active div:nth-child(2){
-    opacity: 0;
-}
-button:hover div:last-child{
-    
-    animation: div2 1s 1 forwards;
-}
-button:not(:hover) div:last-child{
-    animation: div2termina 1s 1 forwards;
-    background: transparent;
-}
-@keyframes div1 {
-    0% {
 
-    }
 
-    50% {
 
-    }
-    100%{
-        width: 40%;
-        margin-left: 10px;
-        transform: rotate(90deg);
-    }
-}
 
-@keyframes div1termina {
-    0% {width: 40%;
-        margin-left: 10px;
-        transform: rotate(90deg);
-    }
 
-    50% {
 
-    }
-    100%{
-        transform: rotate(-90deg);
-    }
-}
 
-@keyframes div2 {
-    0% {
 
-    }
 
-    50% {
 
-    }
-    100%{
-        width: 40%;
-        margin-left: 10px;
-        transform: rotate(-90deg);
-    }
-}
 
-@keyframes div2termina {
-    0% {width: 40%;
-        margin-left: 10px;
-        transform: rotate(-90deg);
-    }
 
-    50% {
-
-    }
-    100%{
-        transform: rotate(90deg);
-    }
-}
 
