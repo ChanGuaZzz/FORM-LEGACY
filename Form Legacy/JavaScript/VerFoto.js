@@ -1,15 +1,21 @@
-const elemento = document.getElementById(`foto`);
-const height = elemento.clientHeight;
-const width = elemento.clientWidth;
+const elemento = document.getElementsByClassName(`foto`);
+const cantidad = elemento.length;
 
-elemento.addEventListener("mousemove", (evt) => {
+for(i=0;i<cantidad;i++){
+
+const height = elemento[i].clientHeight;
+const width = elemento[i].clientWidth;
+const cadafoto=elemento[i];
+
+cadafoto.addEventListener("mousemove", (evt) => {
   const { layerX, layerY } = evt;
   const yrotation = ((layerX - width / 2) / width) * 20;
   const xrotation = ((layerY - height / 2) / height) * 20;
   const transformString = `perspective(500px) scale(1.1) rotateX(${xrotation}deg) rotateY(${yrotation}deg)`;
-  elemento.style.transform = transformString;
+  cadafoto.style.transform = transformString;
 });
 
-elemento.addEventListener("mouseout", () => {
-  elemento.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+cadafoto.addEventListener("mouseout", () => {
+  cadafoto.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
 });
+}

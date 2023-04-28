@@ -2,17 +2,269 @@ section{
     display:flex;
     width: 430px;
     height: 430px;
+    margin-top: 18%;
+   
+    
+    margin-left: -76%;
 }
 section img{
-    width:100px;
+    width:625px;
     flex-grow: 1;
     object-fit:cover;
-    opacity:.8;
-    transition: .5s ease;
+    transition: all 1s ease;
+   
+    
 }
 section img:hover {
+    margin-top: -5%;
     cursor:crosshair;
-    width: 300px;
+    width: 800px;
+    height: 480px;
     opacity: 1;
     filter:contrast(120%);
+    
+    
 }
+.div1{
+    border:3px  black solid;
+    background-image: url(../Imagenes/fondo\ soporte.jpg);
+    height: 300px;
+    width: 100%;
+    position: fixed;
+    top:0px;
+}
+#fotologo{
+    width: 400px;
+    height: 400px;
+}
+.logo{
+    position:absolute;
+    margin-left: 5px;
+    top:-70px;
+    width: 30px;
+    height: 300px;
+}
+.titulo{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 70px;  
+    position: absolute;
+    top:5.3px;
+    left:42%;
+    color: rgb(86, 0, 136);
+    position: fixed;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+.subtitulo{
+    text-align: center;
+    color: rgb(189, 160, 0);
+    margin:auto;
+    margin-top: 9%;
+    font-family: inherit;
+}
+.prendas{
+    border:4px solid black;
+    color:rgb(255, 255, 255);
+    background-color: rgba(162, 0, 255, 0.758);
+    position: fixed;
+    top: 263px;
+    left:13px;
+    width: 33%;
+    height: 3%;
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-between;
+    padding:5px;
+    cursor: pointer;
+}
+summary{
+    
+    position: fixed;
+    top:268px;
+    left:3%;
+}
+.desplegable{
+    margin-left: 45px;
+    position: fixed;
+    top:300px;
+    left:3%;
+}
+  
+.promociones{
+    border:4px solid black;
+    color: rgb(255, 255, 255);
+    background-color: rgb(39, 39, 39);
+    position: fixed;
+    top: 263px;
+    left:33%;
+    width: 33%;
+    height: 4%;
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+}
+.soporte{
+    border:4px solid black;
+    color: rgb(255, 255, 255);
+    background-color: rgba(162, 0, 255, 0.758);
+    position: fixed;
+    top: 263px;
+    left:66.2%;
+    width: 33%;
+    height: 4%;
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy ;
+}
+.cuerposoporte{
+    height: 1800px;
+    width: 1500px;
+    margin-left: 10%;
+    margin-top: 20%;
+    
+}
+.acerca{
+    color:white;
+    font-size: 35px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+h3{
+    color:rgb(160, 160, 160);
+    text-align: justify;
+    font-size: 25px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.textoh3{
+    width: 95%;
+    text-align: center;
+}
+.ubicacion{
+    width: 95%;
+    height: 800px;
+}
+.mapa{
+    width: 500px;
+    height: 600px;
+    margin-left: 5%;
+    margin-top: 0;
+}
+.contacto{
+    height: 585px;
+    width: 750px;
+    margin-top:-600px;
+    margin-left: 45%;
+}
+.atentioncliente{
+    color:white;
+    margin-top:50px;
+    margin-left: 5%;
+}
+.atentionclienteduda{
+    color:white;
+    margin-top:10px;
+    margin-left: 5%;
+}
+.comentarios{
+    background-color: rgb(199, 199, 199);
+    height: 180px;
+    width: 650px;
+    margin-left: 40px;
+}
+body{
+    background-image: url(../Imagenes/estrellas.jpg);
+  
+   
+}
+
+footer{
+    color: aliceblue;
+}
+#linksoporte{
+    color: rgb(247, 187, 237);
+
+}
+
+#tituloCamisetas{
+    margin-top: 30%;
+    color: white;
+    margin: auto;
+}
+#tituloPromociones{
+    text-align: center;
+    margin-top: 1%;
+    border: 2px solid black;
+    border-radius: 20px 20px 20px;
+    color: aliceblue;
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.imagenesPromocion{
+    margin-top: 40%;
+    width: 300px;
+    height: 200px;
+}
+.foto{
+    width: 400px;
+    height: 300px;
+    z-index: -1;
+     
+}
+.imagenesCamisetas{
+    width: 400px;
+    height: 530px;
+    color: aliceblue;
+    border: 1PX solid rgb(255, 255, 255);
+    margin-left: 9%;
+    display: inline-block;
+    margin-bottom: 2%;
+    background-color: rgb(85, 31, 136);
+}
+
+header{
+    z-index: 4;
+}
+
+a{
+    color: white;
+}
+.titulilloCamisetas{
+    font-size: 30px;
+}
+#total{
+    color: white;
+    float: right;
+    margin-right: 2%;
+    font-family:  'Arial Narrow Bold';
+    font-size: 30px;
+}
+.boton{
+    
+    display: flex;
+    border: 1px solid black;
+    width: 75px;
+    height: 45px;
+    background-image: url(../Imagenes/carro.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    gap: .100rem;
+    flex-direction: column;
+    box-shadow:  10px 10px 10px black;
+    border-radius: 20px 20px 20px;
+    transition: all .1s;
+    margin-left: 40%;
+} 
+.boton:active{
+    width: 70px;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
