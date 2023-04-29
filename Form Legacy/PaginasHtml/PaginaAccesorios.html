@@ -3,16 +3,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accesorios</title>
+    <link rel="stylesheet" href="../EstilosCSS/EstiloCss.css">
+    <script>
+        var totalAPagar=0
+    </script>
 </head>
 <body>
     <header>
         <div class="div1">
             <div class="logo"><img id="fotologo" src="../Imagenes/Logo1.png"></img></div>
             <h1 class="titulo">FORM LEGACY</h1>
-            <h3 class="subtitulo">"Descubre la moda que habla de ti: Nuestra ropa cuenta tu historia"</h3>
-            <div class="prendas">
-                <script src="../JavaScript/desplegable.js"></script>
+            <h3 class="subtitulo">Accesorios</h3>
+            <div id="prendas">
+                
                 <!--<div class="desplegable">
                     <a href="#" class="desplegable-toggle">Prendas</a>
                     <ul class="desplegable-menu">
@@ -21,7 +25,7 @@
                     </ul>
                   </div>-->
                 <details>
-                    <summary>Prendas</summary>
+                    <summary id="botonprendas">Prendas</summary>
                     <ul class="desplegable">
                         <li><a  href="PaginaCamisetas.html">Camisetas</a></li>
                         <li><a  href="PaginaAccesorios.html">Accesorios</a></li>
@@ -29,89 +33,75 @@
                 </details>
             </div>
             
-            <div class="promociones">Promociones</div>
+            <div class="promociones"><a href="PaginaPrincipal.html">Promociones</a></div>
             <div class="soporte"><a  href="PaginaSoporte.html">Soporte</a></div>
-
-            <center>
-                <div id="tituloCamisetas">
-                    <h1>Accesorios</h1>
-                </div>
-            </center>
+            <h1 id="total">Su total es: 0</h1>
         </div>
+        
     </header>
-    <main>
 
-        <div class="imagenesAccesorios">
+    <main id="maincamisetas">
+
+        <div class="imagenesCamisetas">
             <div class="foto">
-                <img src="../Imagenes/CamisetaBebeNegra.png">
+                <img style="border: transparent;border-radius: 20px 20px 20px;;height: 300px; width: 400px;" src="../Imagenes/collaarhombre2.jpg">
             </div>
-            <b class="titulilloAccesorios">Accesorio 1 - 20$</b>
-            <p class="descripcionAccesorios">Una camiseta es una prenda de vestir informal y cómoda que se ajusta al torso y cubre los hombros y los brazos hasta el nivel de los codos o las muñecas, 
-                dependiendo del estilo. Por lo general, está confeccionada en algodón, pero también puede estar hecha de otros materiales como poliéster, lino, 
-                seda o mezclas de tejidos.</p>
-            <button class="boton" data-precio="20.00"></button>
+            <b class="titulilloCamisetas">Accesorio 1 - 20$</b>
+            <p class="descripcionCamisetas">¡Potencia tu estilo con nuestro accesorio de moda! Hecho con materiales de calidad y diseñado con atención a los detalles, este accesorio es la adición perfecta para cualquier atuendo. Con su estilo único y versatilidad, te garantizamos que será una pieza clave en tu colección de accesorios.</p>
+                <button class="boton" data-precio="20.00"></button>
         </div>
 
-        <div class="imagenesAccesorios">
+        <div class="imagenesCamisetas">
             <div class="foto">
-                <img src="../Imagenes/CamisetaBebeNegra.png">
+                <img style="border: transparent;border-radius: 20px 20px 20px;;height: 300px; width: 400px;" src="../Imagenes/Collar.jpg">
             </div>
-            <b class="titulilloAccesorios">Accesorio 2 - 15.99$</b>
-            <p class="descripcionAccesorios">Una camiseta es una prenda de vestir informal y cómoda que se ajusta al torso y cubre los hombros y los brazos hasta el nivel de los codos o las muñecas, 
-                dependiendo del estilo. Por lo general, está confeccionada en algodón, pero también puede estar hecha de otros materiales como poliéster, lino, 
-                seda o mezclas de tejidos.</p>
-                <button class="boton" data-precio="15.99"></button>
+            <b class="titulilloCamisetas">Accesorio 2 - 30$</b>
+            <p class="descripcionCamisetas">¡Potencia tu estilo con nuestro accesorio de moda! Hecho con materiales de calidad y diseñado con atención a los detalles, este accesorio es la adición perfecta para cualquier atuendo. Con su estilo único y versatilidad, te garantizamos que será una pieza clave en tu colección de accesorios. </p>
+                <button class="boton" data-precio="30.00"></button>
         </div>
 
-        <div class="imagenesAccesorios">
+        <div class="imagenesCamisetas">
             <div class="foto">
-                <img src="../Imagenes/CamisetaBebeNegra.png">
+                <img style="border: transparent;border-radius: 20px 20px 20px;;height: 300px; width: 400px;" src="../Imagenes/collarhombre.jpg">
             </div>
-            <b class="titulilloAccesorios">Accesorio 3 - 10$</b>
-            <p class="descripcionAccesorios">Una camiseta es una prenda de vestir informal y cómoda que se ajusta al torso y cubre los hombros y los brazos hasta el nivel de los codos o las muñecas, 
-                dependiendo del estilo. Por lo general, está confeccionada en algodón, pero también puede estar hecha de otros materiales como poliéster, lino, 
-                seda o mezclas de tejidos.</p>
-                <button class="boton" data-precio="10.00"></button>
+            <b class="titulilloCamisetas">Accesorio 3 - 35.99$</b>
+            <p class="descripcionCamisetas">¡Potencia tu estilo con nuestro accesorio de moda! Hecho con materiales de calidad y diseñado con atención a los detalles, este accesorio es la adición perfecta para cualquier atuendo. Con su estilo único y versatilidad, te garantizamos que será una pieza clave en tu colección de accesorios.</p>
+                <button class="boton" data-precio="35.99"></button>
         </div>
 
-        <div class="imagenesAccesorios">
+        <div class="imagenesCamisetas">
             <div class="foto">
-                <img src="../Imagenes/CamisetaBebeNegra.png">
+                <img style="border: transparent;border-radius: 20px 20px 20px;;height: 300px; width: 400px;" src="../Imagenes/gafas.jpg">
             </div>
-            <b class="titulilloAccesorios">Accesorio 4 - 29.99$</b>
-            <p class="descripcionAccesorios">Una camiseta es una prenda de vestir informal y cómoda que se ajusta al torso y cubre los hombros y los brazos hasta el nivel de los codos o las muñecas, 
-                dependiendo del estilo. Por lo general, está confeccionada en algodón, pero también puede estar hecha de otros materiales como poliéster, lino, 
-                seda o mezclas de tejidos.</p>
-                <button class="boton" data-precio="29.99"></button>
+            <b class="titulilloCamisetas">Accesorio 4 - 23$</b>
+            <p class="descripcionCamisetas">¡Potencia tu estilo con nuestro accesorio de moda! Hecho con materiales de calidad y diseñado con atención a los detalles, este accesorio es la adición perfecta para cualquier atuendo. Con su estilo único y versatilidad, te garantizamos que será una pieza clave en tu colección de accesorios. </p>
+                <button class="boton" data-precio="23.00"></button>
         </div>
 
-        <div class="imagenesAccesorios">
+        <div class="imagenesCamisetas">
             <div class="foto">
-                <img src="../Imagenes/CamisetaBebeNegra.png">
+                <img style="border: transparent;border-radius: 20px 20px 20px;;height: 300px; width: 400px;" src="../Imagenes/pulsera.jpg">
             </div>
-            <b class="titulilloAccesorios">Accesorio 5 - 26$</b>
-            <p class="descripcionAccesorios">Una camiseta es una prenda de vestir informal y cómoda que se ajusta al torso y cubre los hombros y los brazos hasta el nivel de los codos o las muñecas, 
-                dependiendo del estilo. Por lo general, está confeccionada en algodón, pero también puede estar hecha de otros materiales como poliéster, lino, 
-                seda o mezclas de tejidos.</p>
-                <button class="boton" data-precio="26.00"></button>
+            <b class="titulilloCamisetas">Accesorio 5 - 13$</b>
+            <p class="descripcionCamisetas">¡Potencia tu estilo con nuestro accesorio de moda! Hecho con materiales de calidad y diseñado con atención a los detalles, este accesorio es la adición perfecta para cualquier atuendo. Con su estilo único y versatilidad, te garantizamos que será una pieza clave en tu colección de accesorios. </p>
+                <button class="boton" data-precio="13.00"></button>
         </div>
 
-        <div class="imagenesAccesorios">
+        <div class="imagenesCamisetas">
             <div class="foto">
-                <img src="../Imagenes/CamisetaBebeNegra.png">
+                <img style="border: transparent;border-radius: 20px 20px 20px;;height: 300px; width: 400px;" src="../Imagenes/pulseramujer.jpg">
             </div>
-            <b class="titulilloAccesorios">Accesorio 6 - 25$</b>
-            <p class="descripcionAccesorios">Una camiseta es una prenda de vestir informal y cómoda que se ajusta al torso y cubre los hombros y los brazos hasta el nivel de los codos o las muñecas, 
-                dependiendo del estilo. Por lo general, está confeccionada en algodón, pero también puede estar hecha de otros materiales como poliéster, lino, 
-                seda o mezclas de tejidos.</p>
-                <button class="boton" data-precio="25.00"></button>
+            <b class="titulilloCamisetas">Accesorio 6 - 17$</b>
+            <p class="descripcionCamisetas">¡Potencia tu estilo con nuestro accesorio de moda! Hecho con materiales de calidad y diseñado con atención a los detalles, este accesorio es la adición perfecta para cualquier atuendo. Con su estilo único y versatilidad, te garantizamos que será una pieza clave en tu colección de accesorios. </p>
+                <button class="boton" data-precio="17.00"></button>
         </div>
 
     </main>
-    
 
 
-    <footer>
+
+
+    <footer >
         <div>
             <center>
                 <a id="linksoporte" href="PaginaSoporte.html">Soporte </a>&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -121,5 +111,9 @@
             </center>
         </div>
     </footer>
+                <script src="../JavaScript/VerFoto.js"></script>
+                <script src="../JavaScript/Incremento.js"></script>
+                <script src="../JavaScript/desplegable.js"></script>
+    
 </body>
 </html>

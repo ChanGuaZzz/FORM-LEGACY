@@ -3,17 +3,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Camisetas</title>
     <link rel="stylesheet" href="../EstilosCSS/EstiloCss.css">
+    <script>
+        var totalAPagar=0
+    </script>
 </head>
 <body>
     <header>
         <div class="div1">
             <div class="logo"><img id="fotologo" src="../Imagenes/Logo1.png"></img></div>
             <h1 class="titulo">FORM LEGACY</h1>
-            <h3 class="subtitulo">"Descubre la moda que habla de ti: Nuestra ropa cuenta tu historia"</h3>
-            <div class="prendas">
-                <script src="../JavaScript/desplegable.js"></script>
+            <h3 class="subtitulo">Camisetas</h3>
+            <div id="prendas">
+                
                 <!--<div class="desplegable">
                     <a href="#" class="desplegable-toggle">Prendas</a>
                     <ul class="desplegable-menu">
@@ -22,7 +25,7 @@
                     </ul>
                   </div>-->
                 <details>
-                    <summary>Prendas</summary>
+                    <summary id="botonprendas">Prendas</summary>
                     <ul class="desplegable">
                         <li><a  href="PaginaCamisetas.html">Camisetas</a></li>
                         <li><a  href="PaginaAccesorios.html">Accesorios</a></li>
@@ -30,16 +33,18 @@
                 </details>
             </div>
             
-            <div class="promociones">Promociones</div>
+            <div class="promociones"><a href="PaginaPrincipal.html">Promociones</a></div>
             <div class="soporte"><a  href="PaginaSoporte.html">Soporte</a></div>
+            <h1 id="total">Su total es: 0</h1>
         </div>
+        
     </header>
 
-    <main>
+    <main id="maincamisetas">
 
         <div class="imagenesCamisetas">
             <div class="foto">
-                <img src="../Imagenes/CamisetaBebeNegra.png">
+                <img style="border: transparent;border-radius: 20px 20px 20px;;height: 300px; width: 400px;" src="../Imagenes/CamisetaMujerGris.png">
             </div>
             <b class="titulilloCamisetas">Camiseta 1 - 15$</b>
             <p class="descripcionCamisetas">Una camiseta es una prenda de vestir informal y cómoda que se ajusta al torso y cubre los hombros y los brazos hasta el nivel de los codos o las muñecas, 
@@ -50,7 +55,7 @@
 
         <div class="imagenesCamisetas">
             <div class="foto">
-                <img src="../Imagenes/CamisetaBebeNegra.png">
+                <img style="border: transparent;border-radius: 20px 20px 20px;;height: 300px; width: 400px;" src="../Imagenes/CamisetaNiño.png">
             </div>
             <b class="titulilloCamisetas">Camiseta 2 - 22$</b>
             <p class="descripcionCamisetas">Una camiseta es una prenda de vestir informal y cómoda que se ajusta al torso y cubre los hombros y los brazos hasta el nivel de los codos o las muñecas, 
@@ -61,7 +66,7 @@
 
         <div class="imagenesCamisetas">
             <div class="foto">
-                <img src="../Imagenes/CamisetaBebeNegra.png">
+                <img style="border: transparent;border-radius: 20px 20px 20px;;height: 300px; width: 400px;" src="../Imagenes/CamisetaNiñoNegraEspalda.png">
             </div>
             <b class="titulilloCamisetas">Camiseta 3 - 29.99$</b>
             <p class="descripcionCamisetas">Una camiseta es una prenda de vestir informal y cómoda que se ajusta al torso y cubre los hombros y los brazos hasta el nivel de los codos o las muñecas, 
@@ -72,7 +77,7 @@
 
         <div class="imagenesCamisetas">
             <div class="foto">
-                <img src="../Imagenes/CamisetaBebeNegra.png">
+                <img style="border: transparent;border-radius: 20px 20px 20px;;height: 300px; width: 400px;" src="../Imagenes/CamisetaBebeNegra.png">
             </div>
             <b class="titulilloCamisetas">Camiseta 4 - 30$</b>
             <p class="descripcionCamisetas">Una camiseta es una prenda de vestir informal y cómoda que se ajusta al torso y cubre los hombros y los brazos hasta el nivel de los codos o las muñecas, 
@@ -83,7 +88,7 @@
 
         <div class="imagenesCamisetas">
             <div class="foto">
-                <img src="../Imagenes/CamisetaBebeNegra.png">
+                <img style="border: transparent;border-radius: 20px 20px 20px;;height: 300px; width: 400px;" src="../Imagenes/CamisetaHombreNegra.png">
             </div>
             <b class="titulilloCamisetas">Camiseta 5 - 25$</b>
             <p class="descripcionCamisetas">Una camiseta es una prenda de vestir informal y cómoda que se ajusta al torso y cubre los hombros y los brazos hasta el nivel de los codos o las muñecas, 
@@ -94,7 +99,7 @@
 
         <div class="imagenesCamisetas">
             <div class="foto">
-                <img src="../Imagenes/CamisetaBebeNegra.png">
+                <img style="border: transparent;border-radius: 20px 20px 20px;;height: 300px; width: 400px;" src="../Imagenes/Camiseta1.png">
             </div>
             <b class="titulilloCamisetas">Camiseta 6 - 5$</b>
             <p class="descripcionCamisetas">Una camiseta es una prenda de vestir informal y cómoda que se ajusta al torso y cubre los hombros y los brazos hasta el nivel de los codos o las muñecas, 
@@ -118,6 +123,9 @@
             </center>
         </div>
     </footer>
+                <script src="../JavaScript/VerFoto.js"></script>
+                <script src="../JavaScript/Incremento.js"></script>
+                <script src="../JavaScript/desplegable.js"></script>
     
 </body>
 </html>
