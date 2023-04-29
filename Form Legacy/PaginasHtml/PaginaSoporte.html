@@ -29,6 +29,7 @@
                         <summary id="botonprendas">Prendas</summary>
                         <ul class="desplegable">
                             <li><a  href="PaginaCamisetas.html">Camisetas</a></li>
+                            <br>
                             <li><a  href="PaginaAccesorios.html">Accesorios</a></li>
                         </ul>
                     </details>
@@ -109,8 +110,24 @@
                             <h3>958 74 35 69</h3>
                             <br>
                             <h2 class="atentionclienteduda">¿Alguna duda? </h2>
-                            <textarea name="texto" id="comentarios" cols="30" rows="10" placeholder="Ingrese la duda aqui"></textarea>
-                            <br><button id="enviar" type="submit">Enviar</button>
+                            <input name="texto" id="comentarios" cols="30" rows="10" placeholder="Ingrese la duda aqui..."></input>
+                            <br>
+                            <button id="enviar" onclick="limpiarInput()" type="submit">Enviar</button>
+                            <script type="text/javascript">
+                               function limpiarInput() {
+                                document.getElementById("comentarios").value = "";
+                            }
+                            </script>
+                            <script type="text/javascript">
+                                const cambiar=document.getElementById("enviar");
+                                enviar.addEventListener('click', function() {
+                                cambiar.textContent="Enviado";
+                                cambiar.style.width="65px";
+                                cambiar.style.marginBottom="16px";
+                                cambiar.style.boxShadow="0px 0px 20px black";
+                                cambiar.style.height="20px";
+                                })
+                            </script>
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,6 @@ section{
     margin-top: 18%;
     border: transparent;
     border-radius: 10px 10px 10px;
-    
     margin-left: -76%;
 }
 section img{
@@ -41,23 +40,23 @@ section img:hover {
    
 }
 #fotologo{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 .logo{
     position:absolute;
-    margin-left: 5px;
-    top:-70px;
+    margin-left: 45px;
+    top:-45px;
     width: 30px;
     height: 300px;
 }
 .titulo{
     text-align: center;
-    font-family: fantasy;
+    font-family: Verdana Tahoma;
     font-size: 70px;  
     position: absolute;
     top:5.3px;
-    left:42%;
+    left:36.5%;
     color: rgb(246, 241, 248);
     position: fixed;
     -webkit-text-stroke: 1px rgb(7, 7, 7);
@@ -67,7 +66,7 @@ section img:hover {
     color: rgb(189, 160, 0);
     margin:auto;
     margin-top: 9%;
-    font-family: inherit;
+    font-family: Verdana Tahoma;
 }
 #prendas{
     border:4px solid black;
@@ -318,7 +317,9 @@ a{
     border-radius: 20px 20px 20px;
     transition: all .1s;
     margin-left: 40%;
-} 
+    cursor:pointer;
+}
+
 .boton:active{
     width: 70px;
     height: 40px;
@@ -327,8 +328,20 @@ a{
 }
 
 #enviar{
-    margin-left: 2%;
-    margin-top: 5%;
+    margin-left: 40%;
+    margin-top: 1%;
+    width: 55px;
+    height: 20px;
+    text-align: center;
+}
+#enviar:hover{
+    width: 65px;
+    height: 30px;
+    margin-bottom: 16px;
+    box-shadow:  0px 0px 20px black;
+    background-color: rgb(201, 143, 255);
+    color:whitesmoke;
+    
 }
 
 #maincamisetas{
