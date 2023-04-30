@@ -288,6 +288,7 @@ footer{
 
 a{
     color: rgb(215, 200, 230);
+    text-decoration: none;
 }
 .titulilloCamisetas{
     font-size: 30px;
